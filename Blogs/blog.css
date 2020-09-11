@@ -1,0 +1,67 @@
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 1000px
+    
+}
+
+h1, h2 {
+    text-align: center
+}
+
+h3, h4, p{
+    text-indent: 30px;
+}
+
+a:hover{
+    background-color: #3399ff;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.blog-container{
+    display: block;
+    background-color: #99ccff;
+    box-shadow: 5px 10px 8px #888888;
+    border-radius: 25px;
+    width: 650px;
+
+}
+
+.container{
+
+    display: block;
+    background-color: #99ccff;
+    box-shadow: 5px 10px 8px #888888;
+    border-radius: 25px;
+    width: 650px;
+    height: 200px;
+    
+}
+
+.overflowText {
+    overflow: scroll;
+}
+
+pre {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
