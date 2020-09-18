@@ -48,7 +48,8 @@ a {
 }
 
 .overflowText {
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 pre {
