@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 3 Blog</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+
+    <main>
+        <h1>Week 3 Blog</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+
+          </ul> <br>
+        <div class="container ">
+            <h3 style="text-align: center">Topics Covered</h3>
+            <h4><a href="https://www.w3schools.com/howto/howto_css_parallax.asp">Parallax</a></h4>
+            <h4 ><a href="https://www.w3schools.com/html/html_iframe.asp">Iframe </a></h4>
+            
+        </div> <br>
+
+        <div class="container overflowText">
+            <h3 style="text-align: center">Parallax Scrolling</h3>
+            <p>Hello! This past week, I reasearch about parallax scrolling. This techinique allows the background content
+            to move at a differnet speed than the foreground content. Usually, many people that use this, tend to impelement 
+            an image into the background of the webpage. However, you can also make the image in background move with your mouse
+            as well. However, this would require a bit more work and javascript code. Consequently, we will just keep our explanation 
+            simple and straightforward. If you look over the html code below, you will see that we have set the background-sizeto 
+            fix and have also centered the image on the webpage. Consequently, this will allow the image to stay at a certain 
+            place while the user keeps on scrolling. This code snippet as well as my understanding of parallax scrolling came from
+            <a href="https://www.w3schools.com/howto/howto_css_parallax.asp">w3schools</a>.</p>
+            <pre>
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                    
+            </pre>
+
+        </div> <br>
+        <div class="container overflowText">
+            <h3 style="text-align: center">Responsive Images</h3>
+            <p>When people use their phones to view images, the size of them would have to be adjusted in order to show a clear
+            picture. It is very important for the image to not dissappear or be misconfigured when viewing on different devices.
+            Consequently, HTML provides a way to solve this problem very easily by having responsive images. By adjusting the width
+            to 100% and the height to auto, a person can view an image on any device with ease. Sounds pretty neat, right?? If we 
+            look at the image, you will see an example of an image with this implentation. I would like to thank 
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">MDN web docs</a> for 
+            their assistance on creating responsive images.  </p> 
+            <img src="pictures/dog.jpg" alt="animal" width="200px" height="300px"> 
+        </div>
+        
+        
+    </main>
+
+</body>
+</html>
