@@ -99,3 +99,8 @@ pre {
     margin-left: 400px;
 
   }
+
+  div > img {
+    text-align: center;
+    margin-left: 150px;
+  }

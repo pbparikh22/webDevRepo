@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,
+    initial-scale: 1.0">
+    <title>Week 4 Blog</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <h1>Week 4 Blog</h1>
+        </header>
+        
+        <ul>
+            <li><a href="index.html">Home</a></li>
+
+        </ul> <br>
+        <div class="container ">
+            <h3 style="text-align: center">Topics Covered</h3>
+            <h4><a href="https://www.w3schools.com/html/html_intro.asp">Javascript Events</a></h4>
+            <h4 ><a href="https://www.w3schools.com/html/html_css.asp">XHTML </a></h4>
+        </div> <br>
+
+        <div class="container overflowText">
+            <h3 style="text-align: center">Javascript Events</h3>
+            <p>Hello! Events are actions you can add to your webpage to make it more fun and exciting. They
+            For example, you can add a button that could change the font or size of text. This button would 
+            fire a signal when clicked and run the code that is made for it. This code would have to be written
+            using javascript and use event handlers to run the event when triggered. If we take a look a at the javascript
+            below, we have created a const variable named btn that grabs the button by using the query querySelector. We then
+            create a function that generates a random. Finally, we add the action to the button when clicked by 
+            using the random() so that it creates a random number when the person clicks on it. I would like to thank
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events">MDN web docs</a>for 
+            their help and examples on understanding more about Javascript events. </p>
+            <pre>
+                const btn = document.querySelector('button');
+
+                function random(number) {
+                    return Math.floor(Math.random() * (number+1));
+                }
+
+                btn.onclick = function() {
+                const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+                document.body.style.backgroundColor = rndCol;
+                }               
+            </pre>
+        </div> <br>
+        <div class="container overflowText">
+            <h3 style="text-align: center">XHTML</h3>
+            <p> The X in XHTML is not a typo. It stands for EXtensible Hypertext Markup Language. It also sounds 
+            cool, right? XHTML is similar to HTML, but it is stricter and cleaner compared to its counterpart. The 
+            benefits of using this is that documents that are written in this can utilize applications such as applets 
+            and scripts. It also gives you a well-structred format, so that your webpages can be easily processed in the 
+            future by other web browsers. I would like to thank 
+            <a href="https://www.tutorialspoint.com/xhtml/what_is_xhtml.htm">tutorialspoint</a> for helping me understanding
+            more about XHTML. 
+            </p> 
+            <div>
+                <img src="pictures/xhtml.jpg" alt="XHTML code" width="500px" height="500px">
+            </div>
+            
+
+        </div>
+        <br> <br>
+
+        
+    </main>
+
+</body>
+</html>
