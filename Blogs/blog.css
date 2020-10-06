@@ -1,8 +1,9 @@
 body {
-    background-color: #cce5ff;
+    background-image: url("pictures/backgroundss.jpg"); 
+    background-repeat: none;
     margin-left: 100px;
     margin-right: 100px;
-    width: 1000px  
+    width: 1000px 
 }
 
 h1, h2 {
