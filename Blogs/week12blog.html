@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,
+    initial-scale: 1.0">
+    <title>Week 12 Blog</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <h1>Week 12 Blog</h1>
+        </header>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+
+          </ul> <br>
+        <div class="container">
+            <h3 style="text-align: center">Topics Covered</h3>
+            <h4><a href="https://www.smashingmagazine.com/2016/06/an-introduction-to-redux/"> Redux</a></h4>
+            <h4 ><a href="https://www.accelebrate.com/blog/the-real-benefits-of-the-virtual-dom-in-react-js/"> Virtual DOM</a></h4>
+            
+        </div> <br>
+
+        <div class="container overflowText">
+            <h3 style="text-align: center"> Redux</h3>
+            <p>Hello, its been a while since we last talked. This week we are diving into the 
+            exciting world of react. In today's discussion, we will be discussing about what 
+            redux is and its different uses. Before we get started, it is important to note that redux 
+            is separate from javascript and is a predictable state contianer that can be used with many 
+            different UI layers. One of benefits of using redux is that it encourages us to create good react 
+            architectures. In other words, we are able to break up large components of ourreact project 
+            into smaller functions that perform a certain task. Another benefit of using redux is that various 
+            performance optimizations are built in for the user. This can avoid any uneccesary re-rendering if 
+            the data has not changed for the component. As a result, your components will only re-render when they 
+            need are required. Finally, due to redux's strict structure, it is easy to maintain because of its predictability.
+            I would like to acknowledge <a href="https://www.smashingmagazine.com/2016/06/an-introduction-to-redux/">Alex Bachuk</a> and his article on Redux for helping me understand a little
+            bit more on this topic and how it can be used in creating apps. </p>
+
+            <div>
+                <img src="pictures/react.jpg" alt="React logo" width="500px" height="500px">
+            </div>
+
+        </div> <br>
+        <div class="container overflowText">
+            <h3 style="text-align: center"> Virtual DOM</h3>
+            <p> The virtual DOM is a lightweight representation of an DOM object. Consequently, the virtual DOM 
+            does not have the ability to actually change what is on the screen. Instead, it only updates the DOM
+            objects at a very fast pace. React then only updates the objects that have changed by 
+            comparing the currrent DOM objects to the pre-updates verisons (aka diffing). Many articles will argue that this 
+            process of reading and writing from the DOM is slow, which is not true. What is slow, however, is changing the layout 
+            of the browers when the DOM actually changes. This is because the browsers need to recalculate the CSS, repaint the web, 
+            re-structure the layout. If you observe the code snippet below, you will see that we are using methods (getElementById, 
+            parentNode, and removeChild) from the HTML DOM to dynamically change the contents of the webpage. Consequently, we are able to 
+            traverse through HTML DOM and modify the nodes. I would like acknowledge 
+            <a href="https://reactkungfu.com/2015/10/the-difference-between-virtual-dom-and-dom/">React Kung Fu</a> for their code snippet 
+            and <a href="https://www.accelebrate.com/blog/the-real-benefits-of-the-virtual-dom-in-react-js/">Accelebrate</a> for their 
+            assistance helping understnad more about the Virtual DOM.</p> 
+            <pre>
+                var item = document.getElementById("myLI");
+                item.parentNode.removeChild(item);
+            </pre>
+
+        </div>
+        <br> <br>
+
+        
+    </main>
+
+</body>
+</html>
