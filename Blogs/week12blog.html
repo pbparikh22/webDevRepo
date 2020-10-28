@@ -46,15 +46,15 @@
         </div> <br>
         <div class="container overflowText">
             <h3 style="text-align: center"> Virtual DOM</h3>
-            <p> The virtual DOM is a lightweight representation of an DOM object. Consequently, the virtual DOM 
+            <p> The virtual DOM is a lightweight representation of a DOM object. Consequently, the virtual DOM 
             does not have the ability to actually change what is on the screen. Instead, it only updates the DOM
             objects at a very fast pace. React then only updates the objects that have changed by 
-            comparing the currrent DOM objects to the pre-updates verisons (aka diffing). Many articles will argue that this 
+            comparing the currrent DOM objects to the pre-updated verisons (a.k.a diffing). Many articles will argue that this 
             process of reading and writing from the DOM is slow, which is not true. What is slow, however, is changing the layout 
             of the browers when the DOM actually changes. This is because the browsers need to recalculate the CSS, repaint the web, 
-            re-structure the layout. If you observe the code snippet below, you will see that we are using methods (getElementById, 
+            and re-structure the layout. If you observe the code snippet below, you will see that we are using methods (getElementById, 
             parentNode, and removeChild) from the HTML DOM to dynamically change the contents of the webpage. Consequently, we are able to 
-            traverse through HTML DOM and modify the nodes. I would like acknowledge 
+            traverse through HTML DOM and modify its nodes. I would like acknowledge 
             <a href="https://reactkungfu.com/2015/10/the-difference-between-virtual-dom-and-dom/">React Kung Fu</a> for their code snippet 
             and <a href="https://www.accelebrate.com/blog/the-real-benefits-of-the-virtual-dom-in-react-js/">Accelebrate</a> for their 
             assistance helping understnad more about the Virtual DOM.</p> 
