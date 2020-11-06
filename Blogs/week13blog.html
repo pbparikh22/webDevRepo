@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,
+    initial-scale: 1.0">
+    <title>Week 13 Blog</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <h1>Week 13 Blog</h1>
+        </header>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+
+          </ul> <br>
+        <div class="container">
+            <h3 style="text-align: center">Topics Covered</h3>
+            <h4><a href="https://www.javatpoint.com/nodejs-tutorial#:~:text=Our%20Node.js%20tutorial%20includes,global%20objects%2C%20web%20modules%20etc."> Node JS</a></h4>
+            <h4 ><a href="https://www.techonthenet.com/mysql/primary_keys.php"> Primary Keys</a></h4>
+            
+        </div> <br>
+
+        <div class="container overflowText">
+            <h3 style="text-align: center"> Node JS</h3>
+            <p>Hola! This week we are going to talk about NOde JS and how it can be used to create web applications. Before we get started, 
+            it is important to note that Node JS is free to use and can also be downloaded by clicking <a href="https://nodejs.org/en/">here</a>.
+            This mostly used to run real-time server applications, but it can also be used to create a server-side and network web applications as well.
+            It also comes with numerous library related to javascript modules that can be used to create the applications. One of the more 
+            interesting things about this tool is that its inout and output is asynchronous and event driven. What this basically means that node js-like server
+            does not have to wait for the API to return data. The picture below illustrates the different parts of Node JS. I would like to acknowledge
+            <a href="https://www.javatpoint.com/nodejs-tutorial#:~:text=Our%20Node.js%20tutorial%20includes,global%20objects%2C%20web%20modules%20etc.">JavaTPoint</a> 
+            for their assitance on helping understand more about this topic and for using their image as well.  
+            </p>
+
+            <div>
+                <img src="pictures/nodeJS.png" alt="parts of Node JS" width="500px" height="500px">
+            </div>
+
+        </div> <br>
+        <div class="container overflowText">
+            <h3 style="text-align: center"> Primary Keys</h3>
+            <p> In mySQL, primary key represent a single field or combination of fields that uniquely defines a record. They are also generally used to to create a table
+            or alter a table. In order to alter a table, you would the keywords, ALTER and in order to create a table, you would use the key words CREATE. If you look at the 
+            code snipet, below you will see an example of how to write SQL and primary keys. For example, in the snipet we used the CREATE keyword
+            in order to create a table named, contacts. In this code we have also created a primary key named contacts_pk that has only one 
+            column named, contact_id. In mySQL, you are allowed to have multiple column in a primary. We could also create an ALTER TABLE where we would 
+            be able to add, delete, or modify the columns that exists in our tables. I would like to acknowledge <a href="https://www.techonthenet.com/mysql/index.php">Tech on the Net</a>
+            for their assistance on primary keys and also for their code snippet.   
+            </p> 
+            <pre>
+                CREATE TABLE contacts ( 
+                    contact_id INT(11) NOT NULL AUTO_INCREMENT,
+                    last_name VARCHAR(30) NOT NULL,
+                    first_name VARCHAR(25),
+                    birthday DATE,
+                    CONSTRAINT contacts_pk PRIMARY KEY (contact_id)
+                );
+            </pre>
+
+        </div>
+        <br> <br>
+
+        
+    </main>
+
+</body>
+</html>
