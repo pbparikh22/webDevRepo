@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,
+    initial-scale: 1.0">
+    <title>Week 14 Blog</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <h1>Week 14 Blog</h1>
+        </header>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+
+          </ul> <br>
+        <div class="container">
+            <h3 style="text-align: center">Topics Covered</h3>
+            <h4><a href="https://reactjs.org/docs/context.html#reactcreatecontext"> Context API</a></h4>
+            <h4 ><a href="https://developers.google.com/web/fundamentals/primers/service-workers/">Service Worker </a></h4>
+            
+        </div> <br>
+
+        <div class="container overflowText">
+            <h3 style="text-align: center"> Context API</h3>
+            <p>Bonjour! This week we will discuss about how to pass data between components through the use of 
+            context API. We would use this tool when we want data to be passed down from parent to child (top-down)
+            through props. However, it is important to note that context should be used sparingly on data that is 
+            accesible to many components. The more we use context, the harder it will be for us to reuse the components.
+            If you look at the code snippet below, you will see an example of a context object that is created with a 
+            defaultValue argument. This argument is only used when a component does not have a matching Provider above it 
+            in the tree. It is also important to note that when we create a Context object, it comes with a Provider React 
+            component that allows us to consume components that subscribe to context changes. I would like to thank 
+            <a href="https://reactjs.org/docs/context.html#reactcreatecontext">React</a> for their help on helping me 
+            understand more about context api and for using their code snippet. 
+            </p>
+
+            <pre>
+                const MyContext = React.createContext(defaultValue);
+            </pre>
+
+        </div> <br>
+        <div class="container overflowText">
+            <h3 style="text-align: center">Service Worker</h3>
+            <p> A service worker is script that your browsers run in teh background. The exciting part service workers is 
+            they allow offline experiences while giving developers complete cotrol. A few important things to note about service
+            workers is they can not access the DOM. However, they can communicate with pages it controls by responding to messages. 
+            They also teminate automatically when they are not in use. They also make use of promises. Now we will discuss its life cycle 
+            and what it has to go through before it can be of use. The first step is the install step where you would have to register the worker
+            which usually occurs in the javascript portion of your page. Next we have the activation step. During this stage, the service 
+            worker has the opportunity to handle any management of old caches. After this step, the worker will have control 
+            of all the pages that fall under it scope. Now it will terminate if its idle or handle fetch and message events that occur 
+            when a network request/ message is made from your page. If you look at the diagram below, you will see a complete life cycle of the service worker.
+            I would like to acknowledge Matt Gaunt and his webpage on the <a href="https://developers.google.com/web/fundamentals/primers/service-workers/">life cycle</a> 
+            of a service worker and for the digram as well.</p> 
+            <div>
+                <img src="pictures/lifecycle.png" alt="Service worker life cycle" width="500px" height="500px">
+            </div>
+
+        </div>
+        <br> <br>
+
+        
+    </main>
+
+</body>
+</html>
